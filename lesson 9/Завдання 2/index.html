@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="./style.css" />
+    </head>
+    <body>
+        <div class="bg-white"></div>
+        <img src="./pen.png" alt="pen" class="pen" />
+        <div class="taskbook">
+            <div class="pages">
+                <div class="left-page">
+                    <h2>Список завдань</h2>
+
+                    <form name="form-left" id="s">
+                        <div class="cont">
+                            <input
+                                type="checkbox"
+                                id="html5"
+                                class="checkbox"
+                            />
+                            <label for="html5">HTML5</label>
+                        </div>
+
+                        <div class="cont">
+                            <input type="checkbox" id="css3" class="checkbox" />
+                            <label for="css3">CSS3</label>
+                        </div>
+
+                        <div class="cont">
+                            <input
+                                type="checkbox"
+                                id="sass/scss"
+                                class="checkbox"
+                            />
+                            <label for="sass/scss">SASS/SCSS</label>
+                        </div>
+
+                        <div class="cont">
+                            <input
+                                type="checkbox"
+                                id="bootstrap"
+                                class="checkbox"
+                            />
+                            <label for="bootstrap">Bootstrap</label>
+                        </div>
+                    </form>
+                </div>
+                <div class="right-page">
+                    <h2>Додати нове завдання</h2>
+                    <form name="form-right">
+                        <input type="text" id="input-task" />
+                        <br />
+                        <button
+                            type="button"
+                            name="submit"
+                            id="add-task-button"
+                        >
+                            Додати
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="divider"></div>
+        </div>
+
+        <div class="bg-black"></div>
+        <!-- -------- -->
+        <div class="alertBackground"></div>
+        <div class="massageCantDelete">You cannot delete the last task from the list
+            <div class="close-button1">
+                <span class="line1">|</span>
+                <span class="line2">|</span>
+            </div>
+        </div>
+        <div class="massageCantEmpty">an empty field cannot be filled
+            <div class="close-button2">
+                <span class="line1">|</span>
+                <span class="line2">|</span>
+            </div>
+        </div>
+        <script src="./script.js"></script>
+    </body>
+</html>
